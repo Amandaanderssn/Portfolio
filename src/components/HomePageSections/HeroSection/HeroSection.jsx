@@ -5,7 +5,7 @@ import "./HeroSection.css";
 const HeroSection = () => {
     const { theme } = useTheme();
 
-    const fontSize = "1.5rem";
+    const fontSize = "2rem";
 
     const seeMyWork =
         theme === "dark"

@@ -1,12 +1,15 @@
 import "./StackSection.css";
 import VerticalTitle from "../../VerticalTitle/VerticalTitle";
 
+import { ArrowUpRight } from 'lucide-react';
+
 import { BiLogoJavascript } from 'react-icons/bi';
 import { BiLogoTypescript } from 'react-icons/bi';
 import { FaReact } from 'react-icons/fa';
 import { BiLogoRedux } from 'react-icons/bi';
 import { RiNextjsFill } from 'react-icons/ri';
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 const StackSection = () => {
 
@@ -40,6 +43,8 @@ const StackSection = () => {
                 <div className="stack-text">
                     <p>JavaScript (or TypeScript) and React are my preferred tools for web applications.</p>
                 </div>
+                <Link className={`linkToProjects ${isVisible ? "visible" : ""}`} to={"/portfolio"}>See my projects <span className="moveArrow"> <ArrowUpRight /> </span></Link>
+
             </div>
         </div>
     );

@@ -9,7 +9,8 @@
 
     height: fit-content;
 
-    font-size: 4rem;
+    font-size: 3rem;
     letter-spacing: 25%;
     text-transform: uppercase;
+    text-align: center;
 }
