@@ -1,0 +1,15 @@
+.title {
+    writing-mode: vertical-lr;
+    text-orientation: sideways;
+    /* transform: rotate(180deg); */
+    /* transform: rotate(360deg); */
+
+    margin-top: 0;
+
+
+    height: fit-content;
+
+    font-size: 4rem;
+    letter-spacing: 25%;
+    text-transform: uppercase;
+}

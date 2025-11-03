@@ -1,0 +1,24 @@
+.toggle {
+    width: 4rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    /* position: absolute; */
+    width: fit-content;
+    align-self: "left";
+    /* transform: translateY(-50%); */
+    transition: transform 0.3s ease;
+}
+
+.toggle.lightMode .icon {
+    transform: translate(2rem);
+}
+
+.toggle.darkMode .icon {
+    transform: translate(0);
+}
