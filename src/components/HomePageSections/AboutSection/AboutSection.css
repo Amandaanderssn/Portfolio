@@ -19,16 +19,17 @@
     gap: 2rem;
     align-items: top;
     justify-content: space-between;
+
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.2s ease, transform 1.2s ease;
 }
 
 .position>div {
     width: 40%
 }
 
-/* .arrow {
-    transition: transform 0.1s ease-out, opacity 0.3s ease;
+.position.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
-
-.about-text {
-    transition: filter 0.3s ease, opacity 0.3s ease;
-} */

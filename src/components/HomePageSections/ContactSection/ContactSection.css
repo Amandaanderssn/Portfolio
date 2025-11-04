@@ -71,7 +71,7 @@
 
 }
 
-.copyButton {
+.darkCopyButton {
     height: 2rem;
     width: 5rem;
     color: black;
@@ -83,13 +83,36 @@
     transition: transform 0.15s ease-out, background-color 0.3s ease, box-shadow 0.1s ease;
 }
 
-.copyButton:hover {
+.lightCopyButton {
+    height: 2rem;
+    width: 5rem;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 3rem;
+    box-shadow: rgba(159, 144, 153, 0.4) -5px 5px, rgba(159, 144, 153, 0.3) -10px 10px, rgba(159, 144, 153, 0.2) -15px 15px, rgba(159, 144, 153, 0.1) -20px 20px, rgba(159, 144, 153, 0.05) -25px 25px;
+    transform: translate(15px, -15px);
+    transition: transform 0.15s ease-out, background-color 0.3s ease, box-shadow 0.1s ease;
+}
+
+.darkCopyButton:hover {
     cursor: pointer;
     background-color: rgb(197, 197, 197);
 }
 
-.copyButton.clicked {
+.lightCopyButton:hover {
+    cursor: pointer;
+    background-color: rgb(57, 57, 57);
+}
+
+.darkCopyButton.clicked {
     background-color: rgb(199, 199, 199);
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px;
+    animation: clickBounce 0.5s ease-out;
+}
+
+.lightCopyButton.clicked {
+    background-color: rgb(57, 57, 57);
     box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px;
     animation: clickBounce 0.5s ease-out;
 }
