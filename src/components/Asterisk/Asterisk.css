@@ -4,4 +4,8 @@
     font-size: 8rem;
     line-height: 0.5;
     margin: 0;
+
+    position: absolute;
+    top: 10rem;
+
 }

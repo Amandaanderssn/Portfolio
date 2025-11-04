@@ -1,0 +1,40 @@
+.mail {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0;
+}
+
+.mail.visible {
+    animation: fadeInUp 0.5s ease forwards;
+    animation-delay: 0.8s;
+}
+
+.copiedBubble {
+    position: absolute;
+    right: 0;
+    top: -1.5rem;
+    animation: bubbleUp 1.5s ease-out forwards;
+}
+
+@keyframes bubbleUp {
+    0% {
+        opacity: 0;
+        transform: translate(50%, 0);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translate(60%, -5px);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translate(70%, -25px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(80%, -35px);
+    }
+}

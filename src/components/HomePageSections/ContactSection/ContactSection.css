@@ -11,6 +11,7 @@
     opacity: 0;
     display: inline-block;
     font-size: 2rem;
+    margin-bottom: 0;
 
     transform: translate(100%, 15rem);
 
@@ -37,125 +38,11 @@
     }
 }
 
-.mail {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    opacity: 0;
-}
-
-.mail.visible {
-    animation: appear 0.5s ease forwards;
-    animation-delay: 0.8s;
-}
-
 .thanksMsg {
     opacity: 0;
 }
 
 .thanksMsg.visible {
-    animation: appear 0.5s ease forwards;
+    animation: fadeInUp 0.5s ease forwards;
     animation-delay: 0.8s;
-}
-
-@keyframes appear {
-
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(-5rem);
-        opacity: 1;
-    }
-
-}
-
-.darkCopyButton {
-    height: 2rem;
-    width: 5rem;
-    color: black;
-    background-color: white;
-    border: none;
-    border-radius: 3rem;
-    box-shadow: rgba(159, 144, 153, 0.4) -5px 5px, rgba(159, 144, 153, 0.3) -10px 10px, rgba(159, 144, 153, 0.2) -15px 15px, rgba(159, 144, 153, 0.1) -20px 20px, rgba(159, 144, 153, 0.05) -25px 25px;
-    transform: translate(15px, -15px);
-    transition: transform 0.15s ease-out, background-color 0.3s ease, box-shadow 0.1s ease;
-}
-
-.lightCopyButton {
-    height: 2rem;
-    width: 5rem;
-    color: white;
-    background-color: black;
-    border: none;
-    border-radius: 3rem;
-    box-shadow: rgba(159, 144, 153, 0.4) -5px 5px, rgba(159, 144, 153, 0.3) -10px 10px, rgba(159, 144, 153, 0.2) -15px 15px, rgba(159, 144, 153, 0.1) -20px 20px, rgba(159, 144, 153, 0.05) -25px 25px;
-    transform: translate(15px, -15px);
-    transition: transform 0.15s ease-out, background-color 0.3s ease, box-shadow 0.1s ease;
-}
-
-.darkCopyButton:hover {
-    cursor: pointer;
-    background-color: rgb(197, 197, 197);
-}
-
-.lightCopyButton:hover {
-    cursor: pointer;
-    background-color: rgb(57, 57, 57);
-}
-
-.darkCopyButton.clicked {
-    background-color: rgb(199, 199, 199);
-    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px;
-    animation: clickBounce 0.5s ease-out;
-}
-
-.lightCopyButton.clicked {
-    background-color: rgb(57, 57, 57);
-    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px;
-    animation: clickBounce 0.5s ease-out;
-}
-
-@keyframes clickBounce {
-    0% {
-        transform: translate(10px, -10px) scale(0.96);
-    }
-
-    50% {
-        transform: translate(8px, -8px) scale(0.98);
-    }
-
-    100% {
-        transform: translate(15px, -15px) scale(1);
-    }
-}
-
-.copiedBubble {
-    position: absolute;
-    right: 0;
-    top: -1.5rem;
-    animation: bubbleUp 1.5s ease-out forwards;
-}
-
-@keyframes bubbleUp {
-    0% {
-        opacity: 0;
-        transform: translate(50%, 0);
-    }
-
-    20% {
-        opacity: 1;
-        transform: translate(60%, -5px);
-    }
-
-    80% {
-        opacity: 1;
-        transform: translate(70%, -25px);
-    }
-
-    100% {
-        opacity: 0;
-        transform: translate(80%, -35px);
-    }
 }

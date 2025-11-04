@@ -1,0 +1,43 @@
+.contact {
+    height: 85vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-title {
+    font-size: 5rem;
+    width: 60%;
+    margin: 0;
+}
+
+.copiedBubble {
+    position: absolute;
+    right: 0;
+    top: -1.5rem;
+    animation: bubbleUp 1.5s ease-out forwards;
+}
+
+@keyframes bubbleUp {
+    0% {
+        opacity: 0;
+        transform: translate(50%, 0);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translate(60%, -5px);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translate(70%, -25px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(80%, -35px);
+    }
+}
