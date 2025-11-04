@@ -8,25 +8,12 @@ import { BiLogoTypescript } from 'react-icons/bi';
 import { FaReact } from 'react-icons/fa';
 import { BiLogoRedux } from 'react-icons/bi';
 import { RiNextjsFill } from 'react-icons/ri';
-import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import { UseAnimationIfVisible } from "../../../hooks/UseAnimationIfVisible"
 
 const StackSection = () => {
 
-    const ref = useRef(null);
-    const [isVisible, setIsVisible] = useState(false);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                setIsVisible(entry.isIntersecting); // true när syns, false när lämnar
-            },
-            { threshold: 0.3 } // trigga när 20% syns
-        );
-
-        if (ref.current) observer.observe(ref.current);
-        return () => observer.disconnect();
-    }, []);
+    const [ref, isVisible] = UseAnimationIfVisible(0.3)
 
 
     return (
