@@ -11,6 +11,7 @@ const HeroSection = () => {
         theme === "dark"
             ? "/Images/SeeMyWork-darkmode.png"
             : "/Images/SeeMyWork-lightmode.png";
+
     return (
         <div className="hero-section">
             <Asterisk />

@@ -1,5 +1,5 @@
 .projects-section {
-    height: 150vh;
+    height: fit-content;
 }
 
 .projects-title.visible {

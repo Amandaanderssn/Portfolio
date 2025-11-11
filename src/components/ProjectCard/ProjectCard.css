@@ -5,6 +5,18 @@
     margin: auto;
 }
 
+.dark-border {
+    border: 0.5px solid white;
+    padding: 2rem 4rem;
+    border-radius: 3rem;
+}
+
+.light-border {
+    border: 1px solid black;
+    padding: 2rem 4rem;
+    border-radius: 3rem;
+}
+
 .fadeIn {
     opacity: 0;
     transform: translateY(40px);
@@ -19,6 +31,7 @@
 .project-number {
     font-size: 3rem;
     margin-bottom: 0;
+    margin-top: 0;
     margin-left: -2rem;
     line-height: 0.5;
     z-index: 10;
@@ -26,7 +39,6 @@
 
 .project-card-container:nth-child(even) .project-number {
     align-self: flex-end;
-    /* flyttar numret till höger */
     text-align: right;
     margin-right: -2rem;
 }
@@ -36,34 +48,96 @@
 
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 10%;
 }
 
-/* 👇 varannan container spegelvänd */
 .project-card-container:nth-child(even) .container-one {
     flex-direction: row-reverse;
 }
 
 .project-img {
-    width: 40%;
+    width: 50%;
+    transition: transform 0.3s ease;
+}
+
+.project-img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+
 }
 
 .container-two {
-    width: 60%;
+    width: 40%;
 }
 
-/* valfritt: justera textalignment */
 .project-card-container:nth-child(even) .container-two {
-    text-align: right;
-    align-items: flex-end;
+    /* text-align: right;
+    align-items: flex-end; */
+    padding-left: 3rem;
 }
 
-.stack-container {
+.project-title {
+    text-transform: uppercase;
+}
+
+.stacks-container {
     display: flex;
     gap: 1rem;
 }
 
-.project-card-container:nth-child(even) .stack-container {
-    text-align: right;
-    justify-content: flex-end;
+/* .project-card-container:nth-child(even) .stacks-container {
+    text-align: left;
+    justify-content: flex-start;
+} */
+
+.stack {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
+
+.dark-stack {
+    background-color: white;
+    color: black;
+    box-shadow: rgba(159, 144, 153, 0.4) -5px 5px, rgba(159, 144, 153, 0.3) -10px 10px;
+}
+
+.light-stack {
+    background-color: black;
+    color: white;
+    box-shadow: rgba(159, 144, 153, 0.4) -5px 5px, rgba(159, 144, 153, 0.3) -10px 10px;
+
+}
+
+.project-link {
+    font-size: 0.8rem;
+    cursor: pointer;
+
+    position: relative;
+    display: inline-block;
+}
+
+.project-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background-color: currentColor;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.project-link:hover::after {
+    width: 100%;
+}
+
+.project-link:hover .moveIcon {
+    transform: translate(3px, -3px);
+}
+
+.moveIcon {
+    display: inline-block;
+    transition: transform 0.3s ease;
 }

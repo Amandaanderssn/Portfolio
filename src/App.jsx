@@ -38,11 +38,6 @@ function App() {
         }} /></section>
         <section ref={contactRef}><ContactSection /></section>
       </main>
-      {/* <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes> */}
     </>
   )
 }
