@@ -1,0 +1,101 @@
+.projects-section {
+    height: 150vh;
+}
+
+.projects-title.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fadeIn {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.fadeIn.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .project-content {
+    width: 85%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 6rem;
+    margin: auto;
+}
+
+.projects-title.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fadeIn {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.fadeIn.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-card {
+    width: 90%;
+    min-height: 30vh;
+    max-height: 30vh;
+    padding-left: 2rem;
+    border-radius: 2rem;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid antiquewhite;
+
+    scroll-snap-align: center;
+}
+
+.project-card:hover .weatherAppImg {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.weatherAppImg {
+    width: 20rem;
+    position: absolute;
+    border-radius: 0.5rem;
+    top: -50%;
+    left: 35vw;
+
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.project-card:hover .weatherAppImg:hover {
+    cursor: pointer;
+    transform: rotate(-2deg) scale(1.05);
+} */

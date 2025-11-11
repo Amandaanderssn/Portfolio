@@ -1,0 +1,69 @@
+.project-card-container {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.fadeIn {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.fadeIn.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-number {
+    font-size: 3rem;
+    margin-bottom: 0;
+    margin-left: -2rem;
+    line-height: 0.5;
+    z-index: 10;
+}
+
+.project-card-container:nth-child(even) .project-number {
+    align-self: flex-end;
+    /* flyttar numret till höger */
+    text-align: right;
+    margin-right: -2rem;
+}
+
+.container-one {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+/* 👇 varannan container spegelvänd */
+.project-card-container:nth-child(even) .container-one {
+    flex-direction: row-reverse;
+}
+
+.project-img {
+    width: 40%;
+}
+
+.container-two {
+    width: 60%;
+}
+
+/* valfritt: justera textalignment */
+.project-card-container:nth-child(even) .container-two {
+    text-align: right;
+    align-items: flex-end;
+}
+
+.stack-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-card-container:nth-child(even) .stack-container {
+    text-align: right;
+    justify-content: flex-end;
+}
