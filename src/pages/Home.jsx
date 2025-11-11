@@ -1,8 +1,8 @@
-import AboutSection from "../components/HomePageSections/AboutSection/AboutSection";
-import ContactSection from "../components/HomePageSections/ContactSection/ContactSection";
-import HeroSection from "../components/HomePageSections/HeroSection/HeroSection";
-import ProjectSection from "../components/HomePageSections/ProjectSection/ProjectSection";
-import StackSection from "../components/HomePageSections/StackSection/StackSection";
+import AboutSection from "../components/Sections/AboutSection/AboutSection";
+import ContactSection from "../components/Sections/ContactSection/ContactSection";
+import HeroSection from "../components/Sections/HeroSection/HeroSection";
+import ProjectSection from "../components/Sections/ProjectSection/ProjectSection";
+import StackSection from "../components/Sections/StackSection/StackSection";
 
 const Home = () => {
     return (

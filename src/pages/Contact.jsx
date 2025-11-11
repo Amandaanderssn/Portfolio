@@ -1,8 +1,7 @@
-import ContactSection from "../components/ContactPageSections/ContactSection";
 
 const Contact = () => {
     return (
-        <ContactSection />
+        <>hej</>
     )
 };
 
