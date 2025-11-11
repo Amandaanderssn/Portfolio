@@ -37,6 +37,7 @@ nav.visible {
     align-items: center;
     gap: 0.5rem;
     position: relative;
+    cursor: pointer;
 }
 
 .link-wrapper {

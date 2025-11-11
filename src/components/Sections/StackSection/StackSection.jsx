@@ -8,10 +8,9 @@ import { BiLogoTypescript } from 'react-icons/bi';
 import { FaReact } from 'react-icons/fa';
 import { BiLogoRedux } from 'react-icons/bi';
 import { RiNextjsFill } from 'react-icons/ri';
-import { Link } from "react-router-dom";
 import { UseAnimationIfVisible } from "../../../hooks/UseAnimationIfVisible"
 
-const StackSection = () => {
+const StackSection = ({ onNavigate }) => {
 
     const [ref, isVisible] = UseAnimationIfVisible(0.3)
 
@@ -30,7 +29,7 @@ const StackSection = () => {
                 <div className="stack-text">
                     <p>JavaScript (or TypeScript) and React are my preferred tools for web applications.</p>
                 </div>
-                <Link className={`linkToProjects ${isVisible ? "visible" : ""}`} to={"/portfolio"}>See my projects <span className="moveArrow"> <ArrowUpRight /> </span></Link>
+                <div className={`linkToProjects ${isVisible ? "visible" : ""}`} onClick={() => onNavigate("projects")}>See my projects <span className="moveArrow"> <ArrowUpRight /> </span></div>
 
             </div>
         </div>

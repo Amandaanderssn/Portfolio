@@ -1,11 +1,10 @@
 import "./Navbar.css";
-import { Link } from "react-router-dom";
 
 import { House, BriefcaseBusiness, AtSign } from 'lucide-react';
 import LightDarkModeToggle from "../LightDarkModeToggle/LightDarkModeToggle";
 import { useEffect, useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({ onNavigate }) => {
     const [visible, setVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -13,9 +12,9 @@ const Navbar = () => {
     const iconSize = 20;
 
     const navitems = [
-        { to: "/", icon: <House size={iconSize} />, label: "Home" },
-        { to: "/portfolio", icon: <BriefcaseBusiness size={iconSize} />, label: "Portfolio" },
-        { to: "/contact", icon: <AtSign size={iconSize} />, label: "Contact" },
+        { section: "hero", icon: <House size={iconSize} />, label: "Home" },
+        { section: "projects", icon: <BriefcaseBusiness size={iconSize} />, label: "Projects" },
+        { section: "contact", icon: <AtSign size={iconSize} />, label: "Contact" },
     ];
 
     useEffect(() => {
@@ -44,12 +43,12 @@ const Navbar = () => {
             <h1>Logo</h1>
             <div className="nav-links">
                 {navitems.map((item, index) => (
-                    <Link key={index} to={item.to} className="nav-item">
+                    <div key={index} to={item.to} className="nav-item" onClick={() => onNavigate(item.section)}>
                         <div className="link-wrapper">
                             {item.icon}
                             <span className="nav-item-label">{item.label}</span>
                         </div>
-                    </Link>
+                    </div>
                 ))}
                 <LightDarkModeToggle />
             </div>
