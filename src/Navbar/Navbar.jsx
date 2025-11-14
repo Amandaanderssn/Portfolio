@@ -1,7 +1,7 @@
 import "./Navbar.css";
 
 import { House, BriefcaseBusiness, AtSign } from 'lucide-react';
-import LightDarkModeToggle from "../LightDarkModeToggle/LightDarkModeToggle";
+import LightDarkModeToggle from "../components/LightDarkModeToggle/LightDarkModeToggle";
 import { useEffect, useState } from "react";
 
 const Navbar = ({ onNavigate }) => {
