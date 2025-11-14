@@ -4,7 +4,7 @@ import StackSection from "./components/Sections/StackSection/StackSection";
 import AboutSection from "./components/Sections/AboutSection/AboutSection";
 import ProjectSection from "./components/Sections/ProjectSection/ProjectSection";
 import ContactSection from "./components/Sections/ContactSection/ContactSection"
-import Navbar from "./components/Navbar/navbar";
+import Navbar from "./components/Navbar/Navbar-test";
 
 function App() {
 
