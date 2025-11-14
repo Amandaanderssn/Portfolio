@@ -10,9 +10,12 @@ const ContactSection = () => {
     return (
         <div className="contact-section" ref={ref}>
             <h2 className={`connect-title ${isVisible ? 'visible' : ''} `}> Let's connect</h2>
-            <CopyMail />
-            <VisitLinkedIn />
-            <p className={`thanksMsg ${isVisible ? 'visible' : ''} `}>Hope to hear from you</p>
+            <div className="connect-container">
+                <CopyMail />
+                <VisitLinkedIn />
+            </div>
+            {/* <p className={`thanksMsg ${isVisible ? 'visible' : ''} `}>Hope to hear from you</p> */}
+            <h2 className={`connect-title-2 ${isVisible ? 'visible' : ''}`}>AND make something great</h2>
         </div>
     )
 }

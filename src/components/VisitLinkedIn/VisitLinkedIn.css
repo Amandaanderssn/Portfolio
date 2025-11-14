@@ -6,6 +6,7 @@
 }
 
 .linkedIn.visible {
-    animation: fadeInUp 0.5s ease forwards;
-    animation-delay: 1.2s;
+    /* animation: fadeInUp 0.5s ease forwards; */
+    animation: scaleUp 1s ease forwards;
+    animation-delay: 1.5s;
 }
