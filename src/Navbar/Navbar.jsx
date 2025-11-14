@@ -40,7 +40,6 @@ const Navbar = ({ onNavigate }) => {
 
     return (
         <nav className={visible ? "visible" : "hidden"}>
-            <h1>Logo</h1>
             <div className="nav-links">
                 {navitems.map((item, index) => (
                     <div key={index} to={item.to} className="nav-item" onClick={() => onNavigate(item.section)}>
