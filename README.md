@@ -1,3 +1,7 @@
+## Portfolio website (in progress - not responsive yet)
+
+Visit the live website here: https://amandaandersson-portfolio.netlify.app
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
