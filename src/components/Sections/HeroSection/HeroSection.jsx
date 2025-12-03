@@ -27,7 +27,7 @@ const HeroSection = () => {
                 <p className="description-text">Hi, I’m Amanda Andersson, a web designer and developer passionate about creating seamless digital experiences!</p>
                 <img src={seeMyWork} alt="image" className="image" />
             </div>
-            <h3 className="slideInUp">AVALIABLE FOR WORK</h3>
+            <h3 className="slideInUp">AVAILABLE FOR WORK</h3>
         </div>
     )
 };

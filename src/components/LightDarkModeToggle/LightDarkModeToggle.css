@@ -3,6 +3,19 @@
     border-radius: 3rem;
     cursor: pointer;
     z-index: 10;
+
+    /* color: inherit; */
+    /* background-color: inherit; */
+}
+
+.toggle.darkMode {
+    color: inherit;
+}
+
+.toggle.lightMode {
+    background-color: #000000;
+    --box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+
 }
 
 .icon {
@@ -17,6 +30,7 @@
 
 .toggle.lightMode .icon {
     transform: translate(2rem);
+
 }
 
 .toggle.darkMode .icon {
