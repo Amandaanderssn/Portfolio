@@ -1,4 +1,4 @@
-##Portfolio website (in progress - not responsive yet)
+## Portfolio website (in progress - not responsive yet)
 
 Visit the delpoyd website here: https://amandaandersson-portfolio.netlify.app 
 
